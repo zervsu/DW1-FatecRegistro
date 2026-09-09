@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários</title>
+  </head>
+  <body>
+    <h1>Formulários no HTML5</h1>
+    <form method="post">
+      <label for="nome">Nome:</label><br />
+      <!-- input de texto -->
+      <input
+        name="nome"
+        type="text"
+        id="nome"
+        placeholder="Insira seu nome completo..."
+      /><br />
+      <!-- input de e-mail -->
+      <label for="email">Email:</label><br />
+      <input
+        name="email"
+        type="email"
+        placeholder="Insira seu email..."
+      /><br />
+      <!-- input de senha -->
+      <label for="senha">Senha:</label><br />
+      <input
+        name="senha"
+        type="password"
+        placeholder="Insira sua senha..."
+      /><br />
+      <!-- BOTÂO DE SUBMETER O FORMULÁRIO -->
+      <input type="submit" value="cadastrar" />
+      <!-- BOTÂO DE LIMPAR O FORMULÁRIO -->
+      <input type="reset" value="limpar" />
+    </form>
+    <br /><br />
+    <hr />
+    <h3>Outros inputs:</h3>
+    <form>
+      <!-- input de numeros -->
+      <label> Quantidade:</label>
+      <input type="number" min="0" max="10" /><br />
+      <!-- input de datas -->
+      <label> Data:</label>
+      <input type="date" /><br />
+      <!-- input de arquivos -->
+      <label> Arquivos:</label>
+      <input type="file" /><br />
+      <!-- Campo de texto longo -->
+      <label>Comentários:</label>
+      <textarea></textarea><br />
+      <!-- Campo invisível -->
+      <input type="hidden" />
+      <!-- caixa de seleção -->
+      <label>Cursos:</label>
+      <select name="cursos">
+        <option value="1">Programação</option>
+        <option value="2">Design Gráfico</option>
+        <option value="3">Música</option>
+        <option value="4">Enfermagem</option>
+      </select>
+    </form>
+    <br /><br />
+    <hr />
+    <h2>Exemplo de formulário completo</h2>
+    <!-- FORMULÁRIO COMPLETO -->
+    <form action="#" method="post">
+      <h4>Cadastro de usuário</h4>
+      <fieldset>
+        <legend>Dados pessoais:</legend>
+        <label for="nome">Nome:</label>
+        <input
+          id-="name"
+          name="name"
+          type="text"
+          placeholder="Insira seu nome..."
+          required
+        />
+        <br />
+        <label for="nascimento"> Data de nascimento:</label>
+        <input type="date" />
+        <br />
+        <!-- Radio butons -->
+        <label for="sexo">Sexo:</label>
+        <input type="radio" name="sexo" />Masculino
+        <input type="radio" name="sexo" />Feminino
+        <input type="radio" name="sexo" />Prefiro não informar
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Dados de Endereço:</legend>
+        <label for="rua">Rua:</label>
+        <input type="text" />
+        <label for="numero">Número:</label>
+        <input type="number" />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Dados do produto:</legend>
+        <label for="cor">Cor do produto:</label>
+        <input type="color" /><br /><br />
+        <!-- checkbox -->
+        <input type="checkbox" required> Li e aceito os termos de uso
+        <br><br>
+        <input type="text" placeholder="Este campo está desativado" disabled><br><br>
+        <input type="submit" value="Cadastrar" />
+        <input type="reset" value="Limpar" />
+      </fieldset>
+    </form>
+  </body>
+</html>
