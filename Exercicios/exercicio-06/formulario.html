@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <h1>Cadastro de Aluno - DSM</h1>
+
+    <p>Preencha o formulário abaixo para cadastrar um novo aluno.</p>
+
+    <form action="#" method="post">
+      <h4>Cadastro de Aluno</h4>
+      <fieldset>
+        <legend>Dados pessoais:</legend>
+        <label for="nome">Nome:</label>
+        <input
+          id="nome"
+          name="nome"
+          type="text"
+          placeholder="Insira seu nome..."
+          required
+        />
+        <br />
+        <label for="email">Email:</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Insira seu email..."
+          required
+        />
+        <br />
+        <label for="nascimento"> Data de nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento" />
+        <br />
+        <label for="sexo">Sexo:</label>
+        <input type="radio" id="masculino" name="sexo" value="masculino" />Masculino
+        <input type="radio" id="feminino" name="sexo" value="feminino" />Feminino
+        <input type="radio" id="nao-informar" name="sexo" value="nao-informar" />Prefiro não informar
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Dados Acadêmicos:</legend>
+        <label for="curso">curso:</label>
+        <select id="curso" name="curso">
+          <option value="">Selecione um curso</option>
+          <option value="1">DSM</option>
+          <option value="2">ADS</option>
+          <option value="3">Outro</option>
+        </select>
+        <br />
+        <label for="periodo">período:</label>
+        <input type="radio" id="manha" name="periodo" value="manha" /> Manhã
+        <input type="radio" id="noite" name="periodo" value="noite" /> Noite
+        <br />
+        <label for="observacoes">Observações:</label>
+        <textarea id="observacoes" name="observacoes"></textarea>
+        <br />
+        <input type="submit" value="Cadastrar" />
+        <input type="reset" value="Limpar" />
+      </fieldset>
+    </form>
+  </body>
+</html>
