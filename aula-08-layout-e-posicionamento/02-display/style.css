@@ -1,0 +1,56 @@
+body {
+    font-family: arial;
+}
+
+/* Display : block */
+
+div.bloco {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: lightcoral;
+    margin-bottom: 10px;
+    text-align: center;
+    /* Altura da linha */
+    line-height: 50px;
+}
+/* caracteristicas do display block: 
+   -Ocupa toda largura disponivel
+   - sempre quebra linha
+   - e aceita width e heigth (largura e altura)
+   /*
+   /* display: inline */
+
+   div.linha {
+    display: inline;
+    background-color: lightgreen;
+    padding: 10px;
+    margin: 10px;
+    /* Elementos inline não aceitam altura */
+    height: 500px;
+
+   }
+   /* Caracteristicas do display inline
+   -Não quebra linha
+   -ocupa apenas o espaço do content (conteúdo)
+   -não aceita width e heigth (largura e altura)
+   /*
+
+   /* Display: inline-block */
+   div.card1 {
+    background-color: blueviolet;
+    width: 150px;
+    height: 150px;
+
+   }
+      div.card2 {
+    background-color: aqua;
+    width: 150px;
+    height: 90px;
+   }
+   div.linha-bloco {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+   }

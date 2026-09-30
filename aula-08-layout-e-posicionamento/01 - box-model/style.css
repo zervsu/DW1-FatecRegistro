@@ -1,0 +1,43 @@
+/* (asterisco) é um seletor universal no CSS */
+/* as propriedades aqui configuradas se aplicam a todos elementos do site */
+* {
+    margin: 0;
+    /* Define que as dimensões finais do elemento leve em consideração: width/height = padding = border; */
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: arial;
+    background-color: #2c2c2c;
+    color: white;
+}
+
+/* BOX-MODEL
+ O Box Model é composto por:
+   -Content (conteúdo)
+   -Padding (espaço interno)
+   -Border (borda)
+   Margin (espaço externo)
+   */
+
+   div.caixa {
+    /* Content */
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    color: #2c2c2c;
+    /* Padding */
+    padding: 20px;
+    /* Border */
+    border: 5px solid blue;
+    /* Margin */
+    margin:30px;
+    text-align: center;
+ 
+}
+
+   h1 {
+    margin: 30px;
+   }
+
